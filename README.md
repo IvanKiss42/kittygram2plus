@@ -1,43 +1,32 @@
-### Как запустить проект:
+## :exclamation:  Это промежуточная стадия разработки проекта https://github.com/IvanKiss42/kittygram_final  
 
-Клонировать репозиторий и перейти в него в командной строке:
+:smile_cat: Kittygram - блог о домашних питомцах всех расцветок и нравов. Пользователи могут создавать страницы своих питомцев с текстовым описанием, изображением и списком достижений.  
 
-```
-git clone https://github.com/yandex-praktikum/kittygram2plus.git
-```
+:computer: Стек технологий: Python, Django, REST API, JWT  
 
-```
-cd kittygram2plus
-```
+В данной версии были добавлены: пагинация для страниц типа list, возможность фильтровать и сортировать список выдачи на этих страницах.   Данная версия предполагает только локальное использования и локальную проверку работы Django моделей, API и JWT токена для этого:  
 
-Cоздать и активировать виртуальное окружение:
+Cоздайте и активируйте виртуальное окружение:
 
-```
-python3 -m venv env
+```bash
+python -m venv venv
+source venv/Scripts/activate
 ```
 
-```
-source env/bin/activate
-```
+Установите зависимости из файла requirements.txt:
 
-```
-python3 -m pip install --upgrade pip
-```
-
-Установить зависимости из файла requirements.txt:
-
-```
+```bash
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-Выполнить миграции:
+Выполните миграции:
 
-```
-python3 manage.py migrate
+```bash
+python manage.py migrate
 ```
 
 Запустить проект:
-
-```
-python3 manage.py runserver
+```bash
+python manage.py runserver
 ```
